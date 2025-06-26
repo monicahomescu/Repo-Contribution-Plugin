@@ -1,0 +1,182 @@
+html {
+    width: 430px;
+    height: 570px;
+}
+
+.parent-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 535px;
+    padding: 10px;
+    font-size: 12px;
+    font-family: "Lucida Console", serif;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+textarea {
+    resize: vertical;
+    font-size: 12px;
+    font-family: "Lucida Console", serif;
+    background-color: #f1f0f0;
+    padding: 10px;
+}
+
+input {
+    width: 55px;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.button-container {
+    height: 35px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+    width: 80px;
+    height: 35px;
+    padding: 10px;
+    font-size: 12px;
+    font-family: "Lucida Console", serif;
+    font-weight: bold;
+    color: white;
+    background-color: #aeaeae;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+button:hover {
+    background-color: #999999;
+}
+
+.load-circle {
+    width: 12px;
+    height: 12px;
+    border: 12px solid #999999;
+    border-top: 12px solid #717070;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.info-container {
+    visibility: hidden;
+    height: 15px;
+    font-size: 11px;
+    font-style: italic;
+}
+
+.ratio-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.label-container {
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.left-end-bar {
+    width: 4%;
+    height: 20px;
+    background-color: #e07a5f;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.female-bar {
+    width: 22%;
+    height: 20px;
+    background-color: #e07a5f;
+}
+
+.male-bar {
+    width: 24%;
+    height: 20px;
+    background-color: #81b29a;
+}
+
+.nonbinary-bar {
+    width: 24%;
+    height: 20px;
+    background-color: #3d405b;
+}
+
+.unknown-bar {
+    width: 22%;
+    height: 20px;
+    background-color: #f2cc8f;
+}
+
+.right-end-bar {
+    width: 4%;
+    height: 20px;
+    background-color: #f2cc8f;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.number-container {
+    width: 25%;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.metrics-container {
+    display: flex;
+    justify-content: space-between;
+    height: 125px;
+}
+
+.metric-box {
+    border-radius: 15px;
+    width: 182px;
+    background-color: #eeeeee;
+}
+
+.metric-label {
+    height: 15px;
+    padding-top: 5px;
+    text-align: center;
+    color: white;
+    background-color: #aeaeae;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.metric-content {
+    display: flex;
+    padding-top: 12px;
+}
+
+.metric-values {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.arrow-img {
+    width: 60px;
+    height: 80px;
+}
+
+span {
+    margin-top: 3px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}

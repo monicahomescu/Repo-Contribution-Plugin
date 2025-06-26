@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Repo Contribution Plugin</title>
+    <link rel="stylesheet" href="popup.css">
+
+</head>
+
+<body>
+
+    <div class="parent-container">
+
+        <div class="input-container">
+            <div>
+                <textarea id="owner-repo" rows="1" cols="30" placeholder="Enter owner/repo..."></textarea>
+
+                <label for="commit-count">Commits:</label>
+                <input id="commit-count" type="number" min="1" max="10000" value="1000">
+            </div>
+
+            <div id="status-container" class="button-container">
+                <button id="analyze-button">Analyze</button>
+            </div>
+        </div>
+
+        <div id="commits-text" class="info-container"></div>
+
+        <div class="ratio-container">
+            <div>
+                <div>Female</div>
+                <img src="female.png" style="width: 90px" alt="female">
+                <div id="female-ratio">?%</div>
+            </div>
+
+            <div>
+                <div>Male</div>
+                <img src="male.png" style="width: 90px" alt="male">
+                <div id="male-ratio">?%</div>
+            </div>
+
+            <div>
+                <div>Non-binary</div>
+                <img src="nonbinary.png" style="width: 90px" alt="nonbinary">
+                <div id="nonbinary-ratio">?%</div>
+            </div>
+
+            <div>
+                <div>Unknown</div>
+                <img src="unknown.png" style="width: 90px" alt="unknown">
+                <div id="unknown-ratio">?%</div>
+            </div>
+        </div>
+
+        <div>
+            <div class="label-container">Core Team</div>
+
+            <div style="display: flex">
+                <div class="left-end-bar"></div>
+                <div id="female-core-bar" class="female-bar"></div>
+                <div id="male-core-bar" class="male-bar"></div>
+                <div id="nonbinary-core-bar" class="nonbinary-bar"></div>
+                <div id="unknown-core-bar" class="unknown-bar"></div>
+                <div class="right-end-bar"></div>
+            </div>
+
+            <div style="display: flex">
+                <div id="female-core-number" class="number-container">?</div>
+                <div id="male-core-number" class="number-container">?</div>
+                <div id="nonbinary-core-number" class="number-container">?</div>
+                <div id="unknown-core-number" class="number-container">?</div>
+            </div>
+        </div>
+
+        <div>
+            <div class="label-container">Non-Core Team</div>
+
+            <div style="display: flex">
+                <div class="left-end-bar"></div>
+                <div id="female-non-core-bar" class="female-bar"></div>
+                <div id="male-non-core-bar" class="male-bar"></div>
+                <div id="nonbinary-non-core-bar" class="nonbinary-bar"></div>
+                <div id="unknown-non-core-bar" class="unknown-bar"></div>
+                <div class="right-end-bar"></div>
+            </div>
+
+            <div style="display: flex">
+                <div id="female-non-core-number" class="number-container">?</div>
+                <div id="male-non-core-number" class="number-container">?</div>
+                <div id="nonbinary-non-core-number" class="number-container">?</div>
+                <div id="unknown-non-core-number" class="number-container">?</div>
+            </div>
+        </div>
+
+        <div id="average-text" class="info-container"></div>
+
+        <div class="metrics-container">
+            <div class="metric-box">
+                <div class="metric-label">Core Team Diversity</div>
+
+                <div class="metric-content" style="justify-content: flex-end">
+                    <div class="metric-values" style="text-align: right">
+                        <div>HIGH - 1</div>
+                        <div id="max-core"></div>
+                        <div id="placeholder-core">?</div>
+                        <div id="min-core"></div>
+                        <div>LOW - 0</div>
+                    </div>
+
+                    <img src="arrow.png" class="arrow-img" alt="arrow">
+                </div>
+            </div>
+
+            <span>BLAU INDEX</span>
+
+            <div class="metric-box">
+                <div class="metric-label">Non-Core Team Diversity</div>
+
+                <div class="metric-content">
+                    <img src="arrow.png" class="arrow-img" alt="arrow">
+
+                    <div class="metric-values">
+                        <div>1 - HIGH</div>
+                        <div id="max-non-core"></div>
+                        <div id="placeholder-non-core">?</div>
+                        <div id="min-non-core"></div>
+                        <div>0 - LOW</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="popup.js"></script>
+
+</body>
+
+</html>
