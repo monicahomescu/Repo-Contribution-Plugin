@@ -1,0 +1,8 @@
+fastapi[all]
+httpx
+requests
+python-dotenv
+git+https://github.com/tue-mdse/genderComputer.git
+numpy
+scipy
+pandas
