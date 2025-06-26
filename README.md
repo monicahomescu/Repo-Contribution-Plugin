@@ -28,6 +28,7 @@ Inside the `backend/` folder, create a new file named `.env` and add the followi
  ```env
    TOKEN="your_personal_github_token_here"
  ```
+For instructions on how to generate your personal access token visit [GitHub Docs](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic).
 
 2. Set up a virtual environment
    
