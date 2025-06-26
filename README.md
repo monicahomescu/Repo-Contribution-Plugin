@@ -1,5 +1,7 @@
 # Repo-Contribution-Plugin
 
+<img width="100%" height="100%" src="/demos/demo1.png" width="80%">
+
 ## How to run the plugin locally
 
 ### a. Download and extract the project
