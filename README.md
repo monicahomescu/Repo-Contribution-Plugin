@@ -2,7 +2,7 @@
 
 Details on the project’s objectives, background and methodology can be found in the full report [here](https://github.com/monicahomescu/Repo-Contribution-Plugin/blob/main/Report.pdf).
 
-<img width="100%" height="100%" src="/demos/demo1.png" width="80%">
+
 
 ## How to run the plugin locally
 
