@@ -1,6 +1,8 @@
 # Repo-Contribution-Plugin
 
-Details on the project’s objectives, background and methodology can be found in the full report [here](https://github.com/monicahomescu/Repo-Contribution-Plugin/blob/main/Report.pdf).
+To understand what the plugin does, why it was built and how to use it, please visit my Medium blog post [here](https://medium.com/@monicahomescu/measuring-gender-diversity-in-core-and-non-core-roles-a-github-plugin-def7f84c6d07).
+
+More in-depth information on the project's objectives, research process and design choices can be found in the full report [here](https://github.com/monicahomescu/Repo-Contribution-Plugin/blob/main/Report.pdf).
 
 <img width="100%" height="100%" src="demo.png" width="80%">
 
